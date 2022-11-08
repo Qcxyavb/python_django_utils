@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>{{ title }}</title> 
+
+        <link rel="stylesheet" type="text/css" href="/static/mystyle.css">
+	</head>
+	<body>
+
+		<div id="container" style="width:100%;height: 100%;left: 0px;top: 0px;position: absolute ">
+
+			<div id="header" class='nav' >
+				<h1 class="title">数据中台</h1>
+			</div>
+            {% block functions %}
+            {% endblock %}
+
+            {% block content %}
+            {% endblock %}
+
+
+
+			<div id="footer" style="background-color:steelblue;clear:both;text-align:center;">
+				版权 www@cly.com</div>
+
+		</div>
+
+	</body>
+</html>

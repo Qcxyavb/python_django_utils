@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.nav  {
+    background-color:steelblue;
+    border: 1px skyblue;
+    height: 80px;
+}
+
+h1.title {
+    left: 40%;
+    top: 20px;
+    color: white;
+    position: absolute;
+}
+
+/*为 id="firstname" 元素添加指定样式:*/
+#firstname
+{
+background-color:yellow;
+}
