@@ -32,4 +32,5 @@ urlpatterns = [
     re_path(r'^search-post/$', search2.search_post),
     re_path(r'^index/$', index.inedx_page),
     re_path(r'^function_list/$', index.function_list),
+    re_path(r'^function_list_plsql/$', index.function_list_plsql),
 ]

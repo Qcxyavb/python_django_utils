@@ -1,11 +1,11 @@
 {% extends 'index.html' %}
 
 {% block functions %}
-    <div id="menu" style="background: #87CEFA;height: 800px;width: 200px;float: left;border: white 1px" >
+    <div id="menu" style="background: #569cd6;height: 800px;width: 200px;float: left;border: white 1px" >
         <form action="/function_list/" method="post">
         {% csrf_token %}
-        <input type="submit" value="批量sql" style="background: #87CEFA;border: black 1px;height: 60px;width: 200px"><br>
-        <input type="submit" value="function2" style="background: #87CEFA;border: black 1px;height: 60px;width: 200px">
+        <input type="submit" value="批量sql" name="pl_sql" style="background: #87CEFA;border: black 1px;height: 60px;width: 200px"><br>
+        <input type="submit" value="function2" name="function2" style="background: #87CEFA;border: black 1px;height: 60px;width: 200px">
     </form>
     </div>
 {% endblock %}

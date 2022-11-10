@@ -4,7 +4,7 @@
     <div id="content" style="background: floralwhite;height: 800px;width:    1000px;float: left;border: white 1px;text-align: center" >
         <div style="width: 354px;height: 44px;overflow: visible;left: 340px;top: 120px;position: absolute">
             <pre  style="font-size: 27px; color: rgb(0, 0, 0); text-decoration: none; text-align: center; font-family: Arial;  white-space: pre-wrap; width: 354px;">
-                中台小工具-批量sql
+                批量sql
             </pre>
         </div>
         <div style="width: 635px; height: 39px; overflow: visible; left: 140px; top: 180px; position: absolute;">
@@ -14,15 +14,18 @@
                         <td>
                             <pre  style="font-size: 12px; color: rgb(0, 0, 0); text-decoration: none; text-align: left; font-family: SimSun; overflow-wrap: break-word; white-space: pre-wrap; width: 400px;">
                                 批量sql小工具，$i2代表数字从2开始递增
+                                {{ err_message }}
                             </pre>
+
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <form action="/function_list/" method="post" style="left: 300px; top: 230px; position: absolute;">
+        <form action="/function_list_plsql/" method="post" style="left: 300px; top: 230px; position: absolute;">
             {% csrf_token %}
+
             <div style="left: 0px; top: 10px;width: 60px;height: 10px;position: absolute;">
                 <small style="font-size: 12px;">循环次数：</small>
             </div>
